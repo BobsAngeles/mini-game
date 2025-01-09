@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+input {
+    font-family: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    height: 800px;
+    background-image: url(img/big-star.svg), url(img/1vector.svg), url(img/big-star-left.svg), url(img/lit-star-left.svg), url(img/2vector.svg), url(img/3vector.svg), url(img/4vector.svg), url(img/triangle.svg), url(img/lit-star-bottom.svg), url(img/big-star-bottom.svg);
+    background-repeat: no-repeat; 
+    background-position: right bottom 272px, top right 269px, left 63px top 94px, left 156px top 69px, right 231px top 254px, right 5px top 379px, right 61px top 653px, right 113px top 468px, right 455px top 538px, right 344px top 568px;
+    background-color: rgb(225, 255, 143);
+
+    &__top {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        color: rgb(32, 32, 39);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 196px;
+        padding-bottom: 24px;
+
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__btn {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        padding: 10px 65px;
+        margin-top: 48px;
+        margin-bottom: 156px;
+
+        &:hover {
+            background-color:#fff;
+            border: 1px solid rgb(0, 0, 0);
+            color:rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    }
+
+    &__bottom {
+        height: 90px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+
+    }
+}
+
+.main {
+    background-color:rgb(32, 32, 39);
+    background-image: url(img/big-star-main.svg), url(img/lit-star-left-main.svg), url(img/big-star-left-main.svg);
+    background-repeat: no-repeat;
+    background-position: right 0px top 107px, left 25px top 770px, left 40px top 822px;
+}
+
+.main-top {
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 94px;
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 72px;
+    }
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &__big-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        grid-column: span 4;
+
+    }
+
+    &__wrapper {
+        background-color: #fff;
+        border-radius: 30px;
+
+        &:hover {
+            scale: 105%;
+            cursor: pointer;
+        }
+    }
+
+    &__wrapper_min {
+        height: 473px;
+    }
+
+    &__wrapper_middle {
+        height: 512px;
+    }
+
+    &__wrapper_max {
+        height: 551px;
+    }
+
+
+    &__btn {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: left;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        padding: 10px 16px;
+        width: 108px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__img {
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        box-sizing: border-box;
+        margin-top: 32px;
+        margin-bottom: 36px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+}
+
+.mini-game {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color:rgb(32, 32, 39);
+    padding-bottom: 144px;
+    background-image: url(img/lit-star-bottom-minigame.svg), url(img/big-star-top-minigame.svg), url(img/big-star-bottom-minigame.svg), url(img/lit-star-bottom-minigame.svg);
+    background-repeat: no-repeat;
+    background-position: right 123px top 158px, right 45px top 206px, right 52px top 3450px, right 150px top 3498px;
+
+    &__big-title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 96px;
+        margin-bottom: 72px;
+    }
+
+    &__btn {
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 16px 75.5px;
+        &:hover {
+            background-color:#fff;
+            border: 1px solid rgb(0, 0, 0);
+            color:rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        &:hover {
+            scale: 105%;
+        }
+    }
+
+    &__item:nth-child(2n-1) {
+        flex-direction: row-reverse;
+    }
+
+    &__box {
+        width: calc(50% - (50% - 600px));
+        height: 500px;
+        padding: 48px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 36px;
+    }
+
+    &__img {
+        width: calc(50% - (50% - 600px));
+        border-radius: 30px;
+    }
+}
+
+.footer {
+    background-color: rgb(189, 237, 53);
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@import 'mobile';
