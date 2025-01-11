@@ -60,6 +60,9 @@ a {
 .header__btn {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
+  display: block;
+  height: 66px;
+  width: 247px;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
@@ -69,7 +72,7 @@ a {
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
-  padding: 10px 65px;
+  padding: 15px 65px;
   margin-top: 48px;
   margin-bottom: 156px;
 }
