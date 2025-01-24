@@ -76,6 +76,9 @@ a {
   margin-top: 48px;
   margin-bottom: 156px;
 }
+.header__btn_mob {
+  display: none;
+}
 .header__btn:hover {
   background-color: #fff;
   border: 1px solid rgb(0, 0, 0);
@@ -285,15 +288,60 @@ a {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .header {
+    height: 700px;
+    background-image: none;
+    background-image: url(img/mob-bigStar.svg), url(img/mob-litStarTop.svg), url(img/mob-bigStarTop.svg), url(img/mob-litStarBottom.svg), url(img/mob-bigStarBottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 587px right 86px, top 610px right 34px;
+  }
   .header__title {
     font-size: 40px;
     line-height: 49px;
     text-align: center;
+    padding-top: 147px;
   }
   .header__text {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__btn_mob {
+    display: block;
+    height: 55px;
+    width: 285px;
+    font-size: 16px;
+    margin-bottom: 240px;
+    margin-top: 36px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    display: block;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    padding: 15px 65px;
+  }
+  .header__btn_mob:hover {
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__bottom {
+    height: 51px;
   }
   .main {
     display: none;
@@ -331,5 +379,29 @@ a {
     line-height: 23px;
     margin-left: 29px;
     margin-right: 29px;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .header {
+    background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 537px right 86px, top 560px right 34px;
+  }
+  .header__btn_mob {
+    margin-bottom: 238px;
+  }
+}
+@media (min-width: 513px) and (max-width: 539px) {
+  .header {
+    background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 537px right 86px, top 560px right 34px;
+  }
+  .header__btn_mob {
+    margin-bottom: 190px;
+  }
+}
+@media (min-width: 471px) and (max-width: 512px) {
+  .header {
+    background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 557px right 86px, top 580px right 34px;
+  }
+  .header__btn_mob {
+    margin-bottom: 170px;
   }
 }/*# sourceMappingURL=style.css.map */
