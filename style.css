@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -101,16 +105,23 @@ a {
   background-position: right 0px top 107px, left 25px top 770px, left 40px top 822px;
 }
 
-.main-top__title {
+.big-title {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
+}
+.big-title_main {
   padding-top: 94px;
   padding-bottom: 24px;
 }
+.big-title_mini-game {
+  padding-top: 96px;
+  margin-bottom: 72px;
+}
+
 .main-top__text {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -187,25 +198,16 @@ a {
 }
 
 .mini-game {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
   background-color: rgb(32, 32, 39);
   padding-bottom: 144px;
   background-image: url(img/lit-star-bottom-minigame.svg), url(img/big-star-top-minigame.svg), url(img/big-star-bottom-minigame.svg), url(img/lit-star-bottom-minigame.svg);
   background-repeat: no-repeat;
   background-position: right 123px top 158px, right 45px top 206px, right 52px top 3450px, right 150px top 3498px;
 }
-.mini-game__big-title {
-  color: rgb(255, 255, 255);
-  font-family: Montserrat;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 78px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-top: 96px;
-  margin-bottom: 72px;
+.mini-game__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .mini-game__btn {
   border-radius: 60px;
@@ -346,7 +348,7 @@ a {
   .main {
     display: none;
   }
-  .mini-game__big-title {
+  .big-title_mini-game {
     font-size: 40px;
     line-height: 49px;
   }

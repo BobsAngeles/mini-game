@@ -73,12 +73,14 @@
         display: none;
     }
 
-    .mini-game {
-        &__big-title {
+    .big-title {
+        &_mini-game {
             font-size: 40px;
             line-height: 49px;
         }
+    }
 
+    .mini-game {
         &__item {
             flex-direction: column-reverse;
         }
