@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     .center {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
     }
 
     .header {
@@ -17,12 +17,18 @@
             line-height: 49px;
             text-align: center;
             padding-top: 147px;
-
         }
+
+        &__br {
+            display: none;
+        }
+
         &__text {
             font-size: 16px;
             line-height: 20px;
             text-align: center;
+            padding-left: 23px;
+            padding-right: 23px;
         }
 
         &__btn {
@@ -33,7 +39,7 @@
                 height: 55px;
                 width: 285px;
                 font-size: 16px;
-                margin-bottom: 240px;
+                margin-bottom: 132px;
                 margin-top: 36px;
                 color: rgb(255, 255, 255);
                 font-family: Montserrat;
@@ -47,13 +53,6 @@
                 border-radius: 60px;
                 background: rgb(32, 32, 39);
                 padding: 15px 65px;
-                 
-                &:hover {
-                    background-color:#fff;
-                    border: 1px solid rgb(0, 0, 0);
-                    color:rgb(0, 0, 0);
-                    cursor: pointer;
-                }
             }
         }
 
@@ -73,10 +72,22 @@
         display: none;
     }
 
-    .mini-game {
-        &__big-title {
+    .big-title {
+        &_mini-game {
             font-size: 40px;
             line-height: 49px;
+            padding-top: 60px;
+            margin-bottom: 48px;
+
+        }
+    }
+
+    .mini-game {
+        background-image: none;
+        padding-bottom: 49px;
+
+        &__wrapper {
+            gap: 24px;
         }
 
         &__item {
@@ -84,25 +95,35 @@
         }
 
         &__box {
-            height: 283px;
+            height: max-content;
             width: 343px;
             padding: 30px;
         }
 
-        &__item:nth-child(2n-1) {
+        &__item:nth-child(2n) {
             flex-direction: column-reverse;
         }
 
         &__title {
             font-size: 32px;
             line-height: 39px;
-            text-align: center;
+            text-align: left;
+            margin-bottom: 16px;
         }
 
         &__text {
             font-size: 16px;
             line-height: 20px;
-            text-align: center;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        &__br {
+            display: none;
+        }
+        
+        &__br_mob {
+            display: block;
         }
 
         &__img {
@@ -110,38 +131,14 @@
         }
 
         &__btn {
+            width: 285px;
             font-size: 16px;
             line-height: 23px;
-            margin-left: 29px;
-            margin-right: 29px;
+            &:hover {
+                background: rgb(32, 32, 39);
+                color: rgb(255, 255, 255);
+                border: transparent;
+            }
         }
     }
 }
-
-@media (min-width: 540px) and (max-width: 767px) {
-    .header {
-        background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 537px right 86px, top 560px right 34px;
-        &__btn_mob {
-            margin-bottom: 238px;
-        }
-    }
-} 
-
-@media (min-width: 513px) and (max-width: 539px) {
-    .header {
-        background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 537px right 86px, top 560px right 34px;
-        &__btn_mob {
-            margin-bottom: 190px;
-        }
-    }
-} 
-
-
-@media (min-width: 471px) and (max-width: 512px) {
-    .header {
-        background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 557px right 86px, top 580px right 34px;
-        &__btn_mob {
-            margin-bottom: 170px;
-        }
-    }
-} 
