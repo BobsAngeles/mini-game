@@ -312,6 +312,29 @@ a {
   .header__text {
     font-size: 20px;
   }
+  .header__btn {
+    display: none;
+  }
+  .header__btn_mob {
+    display: block;
+    height: 55px;
+    width: 285px;
+    font-size: 16px;
+    margin-bottom: 132px;
+    margin-top: 36px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    display: block;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    padding: 15px 65px;
+  }
   .main {
     display: none;
   }
