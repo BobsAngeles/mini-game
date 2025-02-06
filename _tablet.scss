@@ -1,0 +1,115 @@
+@media (max-width: 1250px) {
+    .center {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .center {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .header {
+        background-image: url(img/big-star.svg), url(img/big-star-left.svg), url(img/lit-star-left.svg), url(img/3vector.svg), url(img/4vector.svg), url(img/triangle.svg);
+        background-position: right bottom 272px, left 63px top 94px, left 156px top 69px, right 5px top 379px, right 61px top 653px, right 113px top 468px;
+
+        &__title {
+            font-size: 56px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__btn {
+            display: none;
+
+            &_mob {
+                display: block;
+                height: 55px;
+                width: 285px;
+                font-size: 16px;
+                margin-bottom: 132px;
+                margin-top: 36px;
+                color: rgb(255, 255, 255);
+                font-family: Montserrat;
+                display: block;
+                font-weight: 600;
+                line-height: 141.69%;
+                letter-spacing: 0%;
+                text-align: center;
+                box-sizing: border-box;
+                border: 1px solid rgb(32, 32, 39);
+                border-radius: 60px;
+                background: rgb(32, 32, 39);
+                padding: 15px 65px;
+            }
+        }
+    }
+
+    .main {
+        display: none;
+    }
+
+    .big-title {
+        font-size: 58px;
+
+        &_mini-game {
+            padding-top: 72px;
+            margin-bottom: 56px;
+        }
+    }
+
+    .mini-game {
+        background-image: none;
+        padding-bottom: 100px;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 350px;
+            padding: 24px 36px;
+        }
+    
+        &__title {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+    
+        &__text {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+        &__br {
+            display: none;
+        }
+
+        &__br_desk {
+            display: block;
+        }
+
+        &__btn {
+            width: 250px;
+        }
+    
+        &__img {
+            width: 50%;
+        }
+    }
+
+    .footer {
+        &__text {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+}
