@@ -327,5 +327,63 @@ a {
     }
 }
 
+.gameplay {
+    &__bg {
+        background-color: #202027;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__main-title {
+        color: rgb(255, 255, 255);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 78px;
+    }
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 24px;
+        &_message {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .game1 {
+        &__box {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        &__btn {
+            border-radius: 60px;
+            background: rgb(189, 237, 53);
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 16px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    
+}
+
+
 @import 'tablet';
 @import 'mobile';
