@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="gameplay gameplay__bg">
     <header class="gameplay__header">
@@ -17,12 +17,15 @@
     <main class="game1">
         <div class="game1__box">
             <input type="number" class="game1__btn" id="input" min="1" max="100">
-            <button onclick="checkGuess()" class="game1__btn">Испытай удачу</button>
-            <button onclick="restartGame()" class="game1__btn">Начать занаво</button>
+            <button onclick="checkGuess()" class="game1__btn" type="button">Испытай удачу</button>
+            <button onclick="restartGame()" class="game1__btn" type="reset">Начать занаво</button>
         </div>
         <div id="message" class="gameplay__text gameplay__text_message"></div>
         <div id="guesses" class="gameplay__text gameplay__text_message"></div>
     </main>
-    <script src="game1.js"></script>
+    <div class="game1__box">
+        <a href="./index.html"  type="button" class="game1__btn">К другим играм</a>
+    </div>
+    <script src="js/game1.js"></script>
 </body>
 </html>

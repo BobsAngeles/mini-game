@@ -34,7 +34,7 @@ a {
 
 .header {
   height: 800px;
-  background-image: url(img/big-star.svg), url(img/1vector.svg), url(img/big-star-left.svg), url(img/lit-star-left.svg), url(img/2vector.svg), url(img/3vector.svg), url(img/4vector.svg), url(img/triangle.svg), url(img/lit-star-bottom.svg), url(img/big-star-bottom.svg);
+  background-image: url(../img/big-star.svg), url(../img/1vector.svg), url(../img/big-star-left.svg), url(../img/lit-star-left.svg), url(../img/2vector.svg), url(../img/3vector.svg), url(../img/4vector.svg), url(../img/triangle.svg), url(../img/lit-star-bottom.svg), url(../img/big-star-bottom.svg);
   background-repeat: no-repeat;
   background-position: right bottom 272px, top right 269px, left 63px top 94px, left 156px top 69px, right 231px top 254px, right 5px top 379px, right 61px top 653px, right 113px top 468px, right 455px top 538px, right 344px top 568px;
   background-color: rgb(225, 255, 143);
@@ -100,7 +100,7 @@ a {
 
 .main {
   background-color: rgb(32, 32, 39);
-  background-image: url(img/big-star-main.svg), url(img/lit-star-left-main.svg), url(img/big-star-left-main.svg);
+  background-image: url(../img/big-star-main.svg), url(../img/lit-star-left-main.svg), url(../img/big-star-left-main.svg);
   background-repeat: no-repeat;
   background-position: right 0px top 107px, left 25px top 770px, left 40px top 822px;
 }
@@ -200,7 +200,7 @@ a {
 .mini-game {
   background-color: rgb(32, 32, 39);
   padding-bottom: 144px;
-  background-image: url(img/lit-star-top-minigame.svg), url(img/big-star-top-minigame.svg), url(img/big-star-bottom-minigame.svg), url(img/lit-star-bottom-minigame.svg);
+  background-image: url(../img/lit-star-top-minigame.svg), url(../img/big-star-top-minigame.svg), url(../img/big-star-bottom-minigame.svg), url(../img/lit-star-bottom-minigame.svg);
   background-repeat: no-repeat;
   background-position: right 123px top 158px, right 45px top 206px, right 52px top 3418px, right 150px top 3466px;
 }
@@ -350,7 +350,7 @@ a {
     padding-right: 36px;
   }
   .header {
-    background-image: url(img/big-star.svg), url(img/big-star-left.svg), url(img/lit-star-left.svg), url(img/3vector.svg), url(img/4vector.svg), url(img/triangle.svg);
+    background-image: url(../img/big-star.svg), url(../img/big-star-left.svg), url(../img/lit-star-left.svg), url(../img/3vector.svg), url(../img/4vector.svg), url(../img/triangle.svg);
     background-position: right bottom 272px, left 63px top 94px, left 156px top 69px, right 5px top 379px, right 61px top 653px, right 113px top 468px;
   }
   .header__title {
@@ -439,7 +439,7 @@ a {
   .header {
     height: 700px;
     background-image: none;
-    background-image: url(img/mob-bigStar.svg), url(img/mob-litStarTop.svg), url(img/mob-bigStarTop.svg), url(img/mob-litStarBottom.svg), url(img/mob-bigStarBottom.svg);
+    background-image: url(../img/mob-bigStar.svg), url(../img/mob-litStarTop.svg), url(../img/mob-bigStarTop.svg), url(../img/mob-litStarBottom.svg), url(../img/mob-bigStarBottom.svg);
     background-repeat: no-repeat;
     background-position: top right 0px, top 64px left 91px, top 97px left 37px, top 587px right 86px, top 610px right 34px;
   }
