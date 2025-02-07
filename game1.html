@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="gameplay gameplay__bg">
+    <header class="gameplay__header">
+        <h1 class="gameplay__main-title">Угадай число</h1>
+        <p class="gameplay__text">Загадано число от 1 до 100, <br>попробуй угадать. <br> У тебя 10 попыток!</p>
+    </header>
+    <main class="game1">
+        <div class="game1__box">
+            <input type="number" class="game1__btn" id="input" min="1" max="100">
+            <button onclick="checkGuess()" class="game1__btn" type="button">Испытай удачу</button>
+            <button onclick="restartGame()" class="game1__btn" type="reset">Начать занаво</button>
+        </div>
+        <div id="message" class="gameplay__text gameplay__text_message"></div>
+        <div id="guesses" class="gameplay__text gameplay__text_message"></div>
+    </main>
+    <div class="game1__box">
+        <a href="./index.html"  type="button" class="game1__btn">К другим играм</a>
+    </div>
+    <script src="js/game1.js"></script>
+</body>
+</html>
