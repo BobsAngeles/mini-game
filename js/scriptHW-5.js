@@ -27,13 +27,13 @@ console.log(isOdd(11));
 
 //3 
  function square(number) {
-    return number ** 2;
+    console.log(number ** 2);
  }
- console.log(square(5));
+ square(6);
 
  const up = (num) => num ** 2;
 
- console.log(up(5));
+ console.log(up(8));
 
  //4
 

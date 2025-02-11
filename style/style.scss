@@ -261,9 +261,6 @@ a {
         border-radius: 30px;
         box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
         background: rgb(255, 255, 255);
-        &:hover {
-            scale: 105%;
-        }
     }
 
     &__item:nth-child(2n) {
