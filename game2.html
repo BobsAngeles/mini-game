@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простая арифметика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="gameplay gameplay__bg">
+    <header class="gameplay__header">
+        <h1 class="gameplay__main-title">Простая арифметика</h1>
+        <p class="gameplay__text">Попробуй решить простую арифметическую задачу. <br> Ответ округляй до десятых</p>
+        <div  class="game1__box">
+            <button onclick="mathTask()" class="game1__btn" type="button">Давай начнем!</button>
+            <p class="gameplay__text" id="task"></p>
+        </div>
+    </header>
+    <main class="game1">
+        <div class="game1__box">
+            <input type="number" class="game1__btn" id="input" min="0" max="10000" step="0,1">
+            <button onclick="checkAnswer()" class="game1__btn" type="button">Проверить ответ</button>
+        </div>
+        <div id="messageRight" class="gameplay__text gameplay__text_message"></div>
+        <div id="guessesWrong" class="gameplay__text gameplay__text_message"></div>
+    </main>
+    <div class="game1__box">
+        <a href="./index.html"  type="button" class="game1__btn">К другим играм</a>
+    </div>
+    <script src="js/game2.js"></script>
+
+</body>
+</html>
