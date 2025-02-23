@@ -20,7 +20,7 @@ const multiArr = [];
 
 for (let i = 0; i < 3; i++) {
     const arr2 = [];
-    for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
         arr2.push(1);
     }
     multiArr.push(arr2);
@@ -57,8 +57,8 @@ if (arr7.includes(guess)) {
 //8
 
 let letterLine = 'abcdef';
-let arrLetterLine = letterLine.split('').reverse().join('');
-console.log(arrLetterLine);
+letterLine = letterLine.split('').reverse().join('');
+console.log(letterLine);
 
 //9
 
@@ -67,12 +67,8 @@ const arr9 = [
     [4, 5, 6],
  ];
 
- const arr9New = []; 
-
- for (let i = 0; i < arr9.length; i++) {
-    arr9New.push(...arr9[i])
-}
- console.log(arr9New);
+const arr9New = arr9.flat();
+console.log(arr9New);
 
  //10
 
@@ -138,7 +134,7 @@ function randomNumbers() {
 
 const arr15 = [];
 
-for (let i = 0; i < 5; i++)  {
+for (let i = 0; i < 6; i++)  {
     arr15.push(randomNumbers());
 }
 
