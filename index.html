@@ -13,7 +13,7 @@
     <header class="header">
         <div class="center header__top">
             <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
-            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br class="header__br"> Если готов, нажимай <span class="bold">«Поехали!»</span> и <span class="bold">приступай.</span></p>
+            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br class="header__br"> Если готов, нажимай <span class="bold">«Поехали!'</span> и <span class="bold">приступай.</span></p>
             <a href="#about-game" class="header__btn">Поехали!</a>
             <a href="#mini-games" class="header__btn_mob">Поехали!</a>
 
@@ -111,7 +111,7 @@
                 <div class="mini-game__box">
                     <h3 class="mini-game__title">Переверни <br class="mini-game__br_desk"> текст</h3>
                     <p class="mini-game__text">Попробуй ввести текст, который <br class="mini-game__br"> будет перевернут.</p>
-                    <button class="mini-game__btn">Играть!</button>
+                    <button id="btnGame3"  onclick="reverseWord()" class="mini-game__btn">Играть!</button>
                 </div>
                 <img class="mini-game__img" src="img/game3.png" alt="">
             </article>
@@ -119,7 +119,7 @@
                 <div class="mini-game__box">
                     <h3 class="mini-game__title">Викторина</h3>
                     <p class="mini-game__text">Отвечай на вопросы викторины <br class="mini-game__br"> с вариантами ответов.</p>
-                    <button class="mini-game__btn">Играть!</button>
+                    <button id="btnGame4" onclick="startQuiz()" class="mini-game__btn">Играть!</button>
                 </div>
                 <img class="mini-game__img" src="img/game5.png" alt="">
             </article>
@@ -144,5 +144,7 @@
     <footer class="footer">
         <h3 class="footer__text">Все права защищены.</h3>
     </footer>
+    <script src="js/game3.js"></script>
+    <script src="js/game4.js"></script>
 </body>
 </html>
