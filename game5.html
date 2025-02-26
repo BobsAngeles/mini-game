@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="gameplay gameplay__bg">
+    <header class="gameplay__header">
+        <h1 class="gameplay__main-title">Камень, ножницы, бумага</h1>
+        <p class="gameplay__text">Сделай свой выбор</p>
+    </header>
+    <main class="game1">
+        <div class="game1__box" id="game">
+            <button class="game1__btn game1__btn_game5" id="камень">Камень</button>
+            <button class="game1__btn game1__btn_game5" id="ножницы">Ножницы</button>
+            <button class="game1__btn game1__btn_game5" id="бумага">Бумага</button>
+        </div>
+        <div id="result"  class="gameplay__text"></div>
+        <div class="game1__box">
+            <div onclick="restartGame()" class="game1__btn game1__btn_game5" type="button">Сыграть еще</div>
+        </div>
+    </main>
+    <div class="game1__box">
+        <a href="./index.html"  type="button" class="game1__btn game1__btn_game5">К другим играм</a>
+    </div>
+    <script src="js/game5.js"></script>
+</body>
+</html>

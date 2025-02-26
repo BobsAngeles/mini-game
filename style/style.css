@@ -300,7 +300,8 @@ a {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 700;
-  line-height: 78px;
+  line-height: 48px;
+  text-align: center;
 }
 .gameplay__text {
   color: rgb(255, 255, 255);
@@ -333,6 +334,13 @@ a {
 }
 .gameplay .game1__btn:hover {
   cursor: pointer;
+}
+.gameplay .game1__btn_game5 {
+  width: -moz-max-content;
+  width: max-content;
+}
+.gameplay .game1__btn_game5:hover {
+  filter: brightness(150%);
 }
 
 @media (max-width: 1250px) {
