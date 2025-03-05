@@ -33,10 +33,10 @@ a {
 }
 
 .header {
-    height: 800px;
+    height: 710px;
     background-image: url(../img/big-star.svg), url(../img/1vector.svg), url(../img/big-star-left.svg), url(../img/lit-star-left.svg), url(../img/2vector.svg), url(../img/3vector.svg), url(../img/4vector.svg), url(../img/triangle.svg), url(../img/lit-star-bottom.svg), url(../img/big-star-bottom.svg);
     background-repeat: no-repeat; 
-    background-position: right bottom 272px, top right 269px, left 63px top 94px, left 156px top 69px, right 231px top 254px, right 5px top 379px, right 61px top 653px, right 113px top 468px, right 455px top 538px, right 344px top 568px;
+    background-position: right bottom 182px, top right 269px, left 63px top 94px, left 156px top 69px, right 231px top 254px, right 5px top 379px, right 61px top 653px, right 113px top 468px, right 455px top 538px, right 344px top 568px;
     background-color: rgb(225, 255, 143);
 
     &__top {
@@ -88,7 +88,6 @@ a {
             display: none;
         }
 
-
         &:hover {
             background-color:#fff;
             border: 1px solid rgb(0, 0, 0);
@@ -96,14 +95,69 @@ a {
             cursor: pointer;
         }
     }
+}
 
-    &__bottom {
-        height: 90px;
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(50px);
-        background: rgb(188, 236, 48);
+.header__scroll {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    gap: 138px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgb(188, 236, 48);
 
+    &::before, &::after {
+        content: "";
+        height: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    &-item-wrapper {
+        flex-shrink: 0;
+        display: flex;
+        gap: 138px;
+        justify-content: space-around;
+        min-width: 100%;
+    }
+
+    &-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 33px;
+        transition: all 0.1s ease-in-out;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../img/Star.svg);
+            width: 36px;
+            height: 36px;
+            top: 25px;
+            right: -87px;
+            z-index: 1;
+        }
+    }
+}
+
+.marquee {
+    animation: scroll 35s linear infinite;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 138px));
     }
 }
 
@@ -252,6 +306,9 @@ a {
             border: 1px solid rgb(0, 0, 0);
             color:rgb(0, 0, 0);
             cursor: pointer;
+        }
+        &_btnGame6 {
+            display: none;
         }
     }
 
