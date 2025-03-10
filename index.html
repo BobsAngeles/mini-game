@@ -13,13 +13,30 @@
     <header class="header">
         <div class="center header__top">
             <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
-            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br class="header__br"> Если готов, нажимай <span class="bold">«Поехали!'</span> и <span class="bold">приступай.</span></p>
+            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br class="header__br"> Если готов, нажимай <span class="bold">«Поехали!» </span> и <span class="bold">приступай.</span></p>
             <a href="#about-game" class="header__btn">Поехали!</a>
             <a href="#mini-games" class="header__btn_mob">Поехали!</a>
 
         </div>
-        <div class="header__bottom"></div>
     </header>
+    <div class="header__scroll">
+        <div class="header__scroll-item-wrapper marquee">
+            <span class="header__scroll-item">ВИКТОРИНА</span> 
+            <span class="header__scroll-item">УГАДАЙ ЧИСЛО</span> 
+            <span class="header__scroll-item">ПЕРЕВЕРНИ ТЕКСТ</span> 
+            <span class="header__scroll-item">ПРОСТАЯ АРИФМЕТИКА</span> 
+            <span class="header__scroll-item">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span>                
+            <span class="header__scroll-item">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span>
+        </div>
+        <div aria-hidden="true" class="header__scroll-item-wrapper marquee">
+            <span class="header__scroll-item">ВИКТОРИНА</span> 
+            <span class="header__scroll-item">УГАДАЙ ЧИСЛО</span> 
+            <span class="header__scroll-item">ПЕРЕВЕРНИ ТЕКСТ</span> 
+            <span class="header__scroll-item">ПРОСТАЯ АРИФМЕТИКА</span> 
+            <span class="header__scroll-item">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span>                
+            <span class="header__scroll-item">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span>
+        </div>
+    </div>
     <main class="main center">
         <section class="main-top">
             <h2 class="main-top__big-title big-title big-title_main" id="about-game">Об играх</h2>
@@ -135,7 +152,8 @@
                 <div class="mini-game__box">
                     <h3 class="mini-game__title">Генератор <br>случайных <br>цветов</h3>
                     <p class="mini-game__text">Игра, в которой при клике <br class="mini-game__br_mob"> на кнопку <br class="mini-game__br"> фон страницы меняется на случайный.</p>
-                    <button class="mini-game__btn">Играть!</button>
+                    <button class="mini-game__btn" id="StartToPlayGame6">Играть!</button>
+                    <button id="btnGame6" class="mini-game__btn mini-game__btn_btnGame6">Смени фон</button>
                 </div>
                 <img class="mini-game__img" src="img/game6.png" alt="">
             </article>
@@ -146,5 +164,7 @@
     </footer>
     <script src="js/game3.js"></script>
     <script src="js/game4.js"></script>
+    <script src="js/game6.js"></script>
+
 </body>
 </html>
